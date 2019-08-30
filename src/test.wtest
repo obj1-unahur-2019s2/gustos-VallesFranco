@@ -1,0 +1,12 @@
+import objetos.*
+import personas.*
+import bolichito.*
+
+test "bolichito" {
+
+	bolichito.ponerEnVidriera(biblioteca)
+	bolichito.ponerEnMostrador(remera)
+	assert.equals(false, bolichito.estaDesequilibrado())
+	
+	 
+}
