@@ -60,9 +60,11 @@ object banquito {
 	method peso() { return 1700 }
 }
 object cajita {
-	var peso
+	var objetoQueContiene 
 	method color() { return rojo }
 	method material() { return cobre }
-	method peso() { return 400 }
-	method peso(pesoNuevo) { peso = pesoNuevo + 400 }
+	method peso() { return 400 + objetoQueContiene.peso()}
+	method objetoQueContiene(unObjeto) {
+		objetoQueContiene = unObjeto
+	}
 }
